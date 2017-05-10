@@ -1,4 +1,4 @@
-# H1 Word Count Lib
+#H1 Word Count Lib
 
 This lib was made to count the number of words in a sample text.
 
