@@ -1,0 +1,11 @@
+{
+  "name": "test-front-evaneos",
+  "version": "1.0.0",
+  "description": "Exercise for Evaneos Recruiting Process. This library will aim to return the number of occurrences of each words of a given text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
