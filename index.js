@@ -1,8 +1,9 @@
-// var sampleText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempore culpa quos fugiat voluptatum distinctio sunt iste, dignissimos obcaecati sequi doloribus tempora ab, vero, nemo quasi sed officiis commodi. Optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempore culpa quos fugiat voluptatum distinctio sunt iste, dignissimos obcaecati sequi doloribus tempora ab, vero, nemo quasi sed officiis commodi. Optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempore culpa quos fugiat voluptatum distinctio sunt iste, dignissimos obcaecati sequi doloribus tempora ab, vero, nemo quasi sed officiis commodi. Optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempore culpa quos fugiat voluptatum distinctio sunt iste, dignissimos obcaecati sequi doloribus tempora ab, vero, nemo quasi sed officiis commodi. Optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempore culpa quos...";
-
+// on importe l'objet contenant le texte qui est dans le fichier json sampleText.
 var sampleText = require("./sampleText.json");
 
+// ici on déclare la fonction countWordOccurences qui va faire le travail demandé
 function countWordOccurences(textInput) {
+  // on récupère le contenu de l'objet de texte
   var text = textInput[0]["content"];
   // on créée un tableau avec le texte qui a été donné en utilisant les espaces comme séparateurs et en mettant les mots en miniscule pour pouvoir ignorer les compter sans tenir compte de la casse. On enlève aussi les points et les virgules.
   var arr = text.toLowerCase().replace(/\./g, "").replace(/\,/g, "").split(" ");
@@ -29,9 +30,9 @@ function countWordOccurences(textInput) {
     // ... et pour chaque clé on l'imprime en imprimant en face sa valeur afin de donner un résultat lisible dans la console.
     console.log(
       Object.keys(obj)[j] +
-        " appears " +
-        Object.values(obj)[j] +
-        " in that text excerpt"
+      " appears " +
+      Object.values(obj)[j] +
+      " in that text excerpt"
     );
   }
   // on retourne l'objet afin qu'il puisse être utilisé par un autre programme.
@@ -39,5 +40,7 @@ function countWordOccurences(textInput) {
   return obj;
 }
 
-// ici on execute la fonction sur le sampleText donné plus haut.
+// ici on execute la fonction sur le sampleText importé plus haut.
 countWordOccurences(sampleText);
+
+// le sampleText est un article de Maddyness sur Evaneos :)

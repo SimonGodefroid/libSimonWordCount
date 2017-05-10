@@ -9,10 +9,10 @@ Run by doing npm run count.
 The outcome of the lib is an object with the words counted in lowerCase as keys and the occurences as values.
 
 e.g. 
-[{
+{
   'some':1,
   'text':1
-}]
+}
 
 This lib currently ignores numbers, words that are under 2 characters and it strips dots "." and commas ",".
 
