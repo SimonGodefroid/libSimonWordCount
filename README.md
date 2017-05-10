@@ -16,4 +16,4 @@ e.g.
 
 This lib currently ignores numbers, words that are under 2 characters and it strips dots "." and commas ",".
 
-By default it will also log the sentence <counted word> appears <occurences> in that excerpt.
+By default it will also log the sentence <\counted word> appears <\occurences> in that excerpt.
